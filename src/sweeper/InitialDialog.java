@@ -80,6 +80,7 @@ class InitialDialog extends JDialog{
         parent.restartGame(getColsN(), getRowsN(), getBombsN());
         setVisible(false);
         label.setText("Начальные параметры");
+
     }
 
     int getBombsN() {
