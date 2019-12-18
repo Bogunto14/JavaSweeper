@@ -73,7 +73,7 @@ class InitialDialog extends JDialog{
         int bombsN = getBombsN();
         int colsN = getColsN();
         int rowsN = getRowsN();
-        if (bombsN > colsN * rowsN) {
+        if (bombsN >= colsN * rowsN) {
             label.setText("Слишком много бомб!");
             return;
         }

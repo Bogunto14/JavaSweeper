@@ -103,7 +103,7 @@ public class Solver {
         // поделённому на количество закрытых ячеек, не принадлежащих ни одной группе.
         int countClosedReminder = 0;
         for (Coord coord : Ranges.getAllCoords()) {
-            // сначала сосчитаем такие ячейки
+            // Сначала сосчитаем такие ячейки
             if (flags.get(coord) == Box.CLOSED && grid[coord.getX()][coord.getY()] == 0.0)
                 countClosedReminder++;
         }
