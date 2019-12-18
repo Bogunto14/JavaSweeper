@@ -55,6 +55,7 @@ public class Game {
     }
 
     public void pressLeftButton(Coord coord) {
+        if (gameOver()) return;
         if (isFirstStep()) {
             while (bomb.get(coord) == Box.BOMB)
                 bomb.start();
@@ -69,7 +70,6 @@ public class Game {
         if (state == GameState.PLAYED)
             if (flag.getCountOfClosedBoxes() == bomb.getTotalBombs())
                 state = GameState.WINNER;
-            gameOver();
     }
 
     private void openBox (Coord coord) {
