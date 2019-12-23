@@ -41,7 +41,6 @@ public class Solver {
                     }
                 }
                 groups.add(group);
-                System.out.println(groups);
             }
         }
         boolean changes;
