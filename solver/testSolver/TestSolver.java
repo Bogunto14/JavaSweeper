@@ -80,8 +80,8 @@ public class TestSolver {
         bombMap.set(new Coord(3, 6), Box.ZERO);
         bombMap.set(new Coord(4, 6), Box.ZERO);
         bombMap.set(new Coord(5, 6), Box.ZERO);
-        /*       0123456
-                 -------
+        /*     x 0123456
+             y    -------
              0   2*3*10
              1   2*3110
              2   112110

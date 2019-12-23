@@ -35,7 +35,7 @@ public class Flag {
         flagMap.set(coord, Box.FLAGED);
     }
 
-    public int getCountOfClosedBoxes() {
+    public int getCountOfClosedBoxes() {                           //Получить количество закрытых клеток
         return countOfClosedBoxes;
     }
 

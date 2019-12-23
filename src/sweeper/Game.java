@@ -50,7 +50,7 @@ public class Game {
         return flag;
     }
 
-    private boolean isFirstStep() {
+    private boolean isFirstStep() {                   //Первых ход
         return firstStep;
     }
 
@@ -66,7 +66,7 @@ public class Game {
         checkWinner();
     }
 
-    private void checkWinner() {
+    private void checkWinner() {                       //Проверка на победу
         if (state == GameState.PLAYED)
             if (flag.getCountOfClosedBoxes() == bomb.getTotalBombs())
                 state = GameState.WINNER;
